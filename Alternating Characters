@@ -1,0 +1,27 @@
+int alternatingCharacters(string s)
+ {
+
+  int j=0,n=s.length(),c=0;
+  string p=s;
+
+while(j<n-1)
+{
+     if(s[j]==s[j+1])
+     {
+         s.erase(s.begin()+j);
+         n=n-1;
+         c++;
+     }
+     else
+     {
+         j++;
+     }
+     if(n==1)
+     {
+         break;
+     }
+}
+  return c;
+
+
+ }
